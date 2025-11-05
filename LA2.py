@@ -19,7 +19,7 @@ def print_node(node, code=''):
     if node.right:
         print_node(node.right, code + '1')
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("----- Huffman Coding -----")
     n = int(input("Enter the number of characters: "))
     chars = []
