@@ -1,13 +1,13 @@
 import heapq
 
 class Node:
-    def _init_(self, freq, symbol, left=None, right=None):
+    def __init__(self, freq, symbol, left=None, right=None):
         self.freq = freq
         self.symbol = symbol
         self.left = left
         self.right = right
 
-    def _lt_(self, other):
+    def __lt__(self, other):
         return self.freq < other.freq
 
 def print_node(node, code=''):
